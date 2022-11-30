@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章要約アプリ</title>
+    <link rel=stylesheet href={{ url_for("static", filename="css/reset.css")}}>
+    <link rel=stylesheet href={{ url_for("static", filename="css/result.css")}}>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">文章要約アプリ</h1>
+    </header>
+    <main>
+        <div class="main-visual">
+            <p class="kv-copy">
+                文章要約アプリ
+            </p>
+        </div>
+        <section>
+            <div>
+                <h2 class="section-title">要約結果</h2>
+                <div class="send">
+                    <textarea name="text_form" rows="20" cols="80" class="text_form">{{summarized_text}}</textarea><br>
+                </div>
+            </div>
+            <div>
+                <h2 class="section-title">原文</h2>
+                <div class="send">
+                    <textarea name="text_form" rows="20" cols="80" class="text_form">{{posted_text}}</textarea><br>
+                </div>
+            </div>
+            <div class="back-top">
+                <a href={{ url_for("index")}}>トップへ戻る</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://da2qwuon32.execute-api.ap-northeast-1.amazonaws.com/dev/" class="Hait_Lab_URL">感情分析アプリはこちらのリンクから</a>
+    </footer>
+</body>
+</html>

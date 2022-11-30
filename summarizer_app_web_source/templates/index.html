@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章要約アプリ</title>
+    <link rel=stylesheet href={{ url_for("static", filename="css/reset.css")}}>
+    <link rel=stylesheet href={{ url_for("static", filename="css/style.css")}}>
+</head>
+<body>
+    <header>
+        <h1 class="site-title"></h1>
+    </header>
+    <main>
+        <div class="main-visual">
+            <p class="kv-copy">
+                文章要約アプリ
+            </p>
+        </div>
+        <section>
+            <h2 class="section-title">はじめに</h2>
+            <p class="section-text1">
+                あらゆる情報が手に入るようになった現代社会において、<br>正しい情報を得るには複数の情報を見比べる必要があります。
+                <br>そこで情報の取捨選択を効率化するため、文章要約アプリを開発しました。
+            </p>
+        </section>
+        <section class="bg-gray">
+            <h2 class="section-title">要約してみましょう</h2>
+            <p class="section-text1">
+                フォームに要約したい文章を入力して実行ボタンを押してください。<br>⚠︎日本語で入力してください。<br>要約には数秒かかります。実行ボタンを連打しないようお願い致します。
+            </p>
+            <div>
+                <form action={{ url_for("Summarizer")}} method="post" enctype="multipart/form-data" class="form">
+                    <div class="send">
+                        <textarea name="text_form" rows="20" cols="80" class="text_form"></textarea><br>
+                    </div>
+                    <div class="send">
+                        <input type="submit"  value="実行" class="button">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://da2qwuon32.execute-api.ap-northeast-1.amazonaws.com/dev/" class="Hait_Lab_URL">感情分析アプリはこちらのリンクから</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* base */
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Helvetica", "Yu Gothic";
+    color: #333;
+}
+
+section {
+    padding: 80px 0;
+}
+main section:nth-of-type(1) {
+    padding: 25px 0;
+}
+main section:nth-of-type(2) {
+    padding: 25px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #9665f1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* header */
+header {
+    background-color: #9665f1;
+    text-align: center;
+    padding: 20px 0;
+}
+.site-title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* kv */
+.main-visual {
+    padding: 30px 0;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.kv-copy {
+    font-size: 50px;
+    font-weight: bold;
+    color: #9665f1;
+}
+
+/* はじめに */
+.section-text1 {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* 認識してみましょう */
+.bg-gray {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.text_form {
+    border: 2px solid #9665f1;
+    font-size: 15px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.send {
+    margin: 30px auto;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 27px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 12px;
+    background-color: #000066;
+    color: #ffffff;
+    line-height: 1em;
+    transition: 3s;
+    box-shadow: 6px 6px 3px #666666;
+    border: 2px solid #000066;
+}
+
+.button:hover {
+    box-shadow : none;
+    color: #000066;
+    background-color: #ffffff;
+}
+
+/* footer */
+
+footer {
+    background-color: #9665f1;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.Hait_Lab_URL {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #000066;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+/* header */
+    .site-title {
+        font-size: 30px;
+    }
+
+    /* kv */
+    .kv-copy {
+        font-size: 24px;
+    }
+}

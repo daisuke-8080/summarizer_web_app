@@ -33,7 +33,7 @@
             <div>
                 <form action={{ url_for("Summarizer")}} method="post" enctype="multipart/form-data" class="form">
                     <div class="send">
-                        <textarea name="text_form" rows="20" cols="80" class="text_form"></textarea><br>
+                        <textarea name="text_form" rows="20" cols="80" class="text_form" required></textarea><br>
                     </div>
                     <div class="send">
                         <input type="submit"  value="実行" class="button">
